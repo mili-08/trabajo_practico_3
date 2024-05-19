@@ -2,133 +2,218 @@
 <html lang="es">
 	<head>
 		<meta charset="UTF-8">
-		<title>Login</title>
+		<title>Iniciar sesión | coderWeb</title>
+		<link><link rel="stylesheet" href="../static/css/styles.css"> 
+		<link><link rel="stylesheet" href="../static/css/stylesRegister.css"> 
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 	</head>
 	
 	<body>
-	 	<header>
-	 		<h1>Registro del Cliente</h1>
-	 	</header>
-	 	
-	 	<form action="" method="post">
-	 	    <div>
-	 	    	<div>
-	 	    		<label for="dni">DNI: </label>
-		 			<input type="number" id="dni" name="dni" min="8000000" maxlength="9" required>
-	 	    	</div>
-	 	    	<div>
-	 	    		<label for="nombres">Nombres: </label>
-		 			<input type="text" id="nombres" name="nombres" required>
-	 	    	</div>
-		 		<div>
-		 			<label for="apellidos">Apellidos: </label>
-		 			<input type="text" id="apellidos" name="apellidos" required>
-		 		</div>
-		 		<div>
-		 			<label for="fechaNacimiento">Fecha de Nacimiento: </label>
-		 			<input type="date" id="fechaNacimiento" name="fechaNacimiento" required  min="1930-01-01" max="2150-12-31">
-		 		</div>
-		 		<div>
-		 			<fieldset>
-			 		   <legend>Genéro</legend>
-			 		   <div>
-				 			<label for="generoFemenino">Femenino</label>
-				 			<input type="radio" id="GeneroFemenino" name="Genero" value="FEMENINO"><br>
-				 			<label for="generoMasculino">Masculino</label>
-				 			<input type="radio" id="GeneroMasculino" name="Genero" value="MASCULINO"><br>
-			 			</div>
-		 			</fieldset>
-		 		</div>
-	 	    </div>
-	 		
-	 		<div>
-	 			<label for="dirección">Dirección: </label>
-	 		   <input type="text" id="dirección" name="dirección" required>
-	 		</div>
-	 		<div>
-		 			<label for="proviciaSelect">Provincia</label>
-			 		<select name="provincia" id="provinciaSelect" required>
-			 		    <option value="" disabled selected>--Elegí una opcion-- </option>
-			 			<option value="JUJUY">Jujuy</option>
-					    <option value="BUENOS AIRES">Buenos Aires</option>
-					    <option value="CATAMARCA">Catamarca</option>
-					    <option value="CHACO">Chaco</option>
-					    <option value="CHUBUT">Chubut</option>
-					    <option value="CÓRDOBA">Córdoba</option>
-					    <option value="CORRIENTES">Corrientes</option>
-					    <option value="ENTRE RÍOS">Entre Ríos</option>
-					    <option value="FORMOSA">Formosa</option>
-					    <option value="LA PAMPA">La Pampa</option>
-					    <option value="LA RIOJA">La Rioja</option>
-					    <option value="MENDOZA">Mendoza</option>
-					    <option value="MISIONES">Misiones</option>
-					    <option value="NEUQUÉN">Neuquén</option>
-					    <option value="RÍO NEGRO">Río Negro</option>
-					    <option value="SALTA">Salta</option>
-					    <option value="SAN JUAN">San Juan</option>
-					    <option value="SAN LUIS">San Luis</option>
-					    <option value="SANTA CRUZ">Santa Cruz</option>
-					    <option value="SANTA FE">Santa Fe</option>
-					    <option value="SANTIAGO DEL ESTERO">Santiago del Estero</option>
-					    <option value="TIERRA DEL FUEGO">Tierra del Fuego</option>
-					    <option value="TUCUMÁN">Tucumán</option>
-					    <option value="CIUDAD AUTÓNOMA DE BUENOS AIRES">Ciudad Autónoma de Buenos Aires</option>
-			 		</select>
-	 		</div>
-             
-             <div>
-             	<label for="numeroTelefono">Número de telefono</label>
-				<input type="text" id="numeroTelefono" name="numeroTelefono" required min="1000000000" maxlength="12">
-             </div>
+		<header id="header">
+	      <div class="img-logo">
+	        <a href="index.html"><img alt="Logo de pagina" src="../static/images/logo.png"></a>
+	      </div>
+	       <nav class="nav-bar">
+		   		<ul>
+		   			<li><a href="https://virtual.unju.edu.ar/course/view.php?id=2540">Plataforma</a></li>
+		   		    <li><a href="index.html#infoBasica">Información</a></li>
+		   		    <li><a href="index.html#modalidad">Modalidad</a></li>
+		   		    <li><a href="index.html#preguntasFrecuentes">Preguntas Frecuentes</a></li>
+		   		    <li><a href="index.html#habilidadesDigitales">Habilidades Digitales</a></li>
+		   		    <li><a href="#contactos">Nosotros</a></li>
+		   		</ul>
+	       </nav>
+	   </header>
 
-	 		<div>	
-	 			<label for="correoElectrico"> Correo Electronico</label>
-	 	        <input type="email" id="correoElectronico" name="correoElectronico" placeholder="email@example.com" required>
-	 		</div>
-	 
-	 		<div>
-	 		</div>
-	 		
-	 		<fieldset>
-	 		 <legend>Categorias</legend>
-					<label for="frontend">Desarrollo Frontend</label>
-					<input type="checkbox" id="frontend" name="categoriasInteres" value="frontend">
-					<label for="backend">Desarrollo Backend</label>
-					<input type="checkbox" id="backend" name="categoriasInteres" value="backend">
-					<label for="baseDeDatos">Base de Datos</label>
-					<input type="checkbox" id="baseDeDatos" name="categoriasInteres" value="baseDeDatos">
-					<label for="dataScience">Data Science</label>
-					<input type="checkbox" id="dataScience" name="categoriasInteres" value="dataScience">
-					<label for="bigData">Big Data</label>
-					<input type="checkbox" id="bigData" name="categoriasInteres" value="bigData">
-	 		</fieldset>
-			
-			<div>
-				 <label for="sugerencias">Déjanos tus sugerencias:</label>
-	 	         <div><textarea id="sugerencias" name="sugerencias" rows="7" cols="50">Escribe aquí</textarea> </div>
-			</div>
-	 	   
-	 	    
-	 	    <div>
-	 	        <label for="pasword">Contraseña</label>
-	 	    	<input type="password" id="password" name="password">
-	 	    	<label for="paswordConfirm">Confirmar Contraseña</label>
-	 	    	<input type="password" id="paswordConfirm" name="paswordConfirm">
-	 	    </div>
-	 	    
-	 	    <div>
-	 	    	<input type="checkbox" id="terminosCondiciones" name="terminosCondiciones" value="ACEPTO TERMINOS Y CONDIFICIONES" required>
-	 	    	<label for="terminosCondiciones">Acepto los <a href="#terminosCondiciones">términos y condiciones</a></label>
-	 	    </div>
-	 	    
-	 	    <div>
-	 	     	<input type="checkbox" id="recibirInformacion" name="recibirInformacion" value="ACEPTO RECIBIR INFORMACION">
-	 	     	<label for="recibirInformacion">Acepto recibir información de codersWeb</label>
-	 	    </div>
-	 	
-	 	</form>
-	 	
-	 	<footer>
-	 	</footer>
-	</body>
+   <div class="containerFormImg">
+  
+			<div class="containerForm">
+				<form action="" method="post">
+				 	   <h1>Registro del Cliente</h1>
+				 	   <section id="datosPersonales">
+					 	    <div class="containerInput">
+					 	       <div class="itemsInput">
+					 	       	  	<div class="itemInput">
+					 	    			<label for="nombres">Nombres: </label>
+						 				<input type="text" id="nombres" name="nombres" required>
+					 	    		</div>
+							 		<div class="itemInput">
+							 			<label for="apellidos">Apellidos: </label>
+							 			<input type="text" id="apellidos" name="apellidos" required>
+							 		</div>
+					 	       </div>
+					 	       
+					 	    	<div class="itemsInput">
+					 	    		<div class="itemInput">
+						 	    		<label for="dni">DNI: </label>
+							 			<input type="number" id="dni" name="dni" min="8000000" maxlength="9" required>
+						 	    	</div>
+							 		<div class="itemInput">
+							 			<label for="fechaNacimiento">Fecha de Nacimiento: </label>
+							 			<input type="date" id="fechaNacimiento" name="fechaNacimiento" required  min="1930-01-01" max="2150-12-31">
+							 		</div>
+					 	    	</div>
+							 		
+					 	    </div>
+	
+						<div class="containerInput">
+		
+							<div class="itemsInput">
+								<div class="itemInput">
+									<label for="dirección">Dirección: </label>
+									<input type="text" id="dirección" name="dirección" required>
+								</div>
+								<div class="itemInput">
+									<label for="proviciaSelect">Provincia</label> <select
+										name="provincia" id="provinciaSelect" required>
+										<option value="" disabled selected>--Elegí una opcion--
+										</option>
+										<option value="JUJUY">Jujuy</option>
+										<option value="BUENOS AIRES">Buenos Aires</option>
+										<option value="CATAMARCA">Catamarca</option>
+										<option value="CHACO">Chaco</option>
+										<option value="CHUBUT">Chubut</option>
+										<option value="CÓRDOBA">Córdoba</option>
+										<option value="CORRIENTES">Corrientes</option>
+										<option value="ENTRE RÍOS">Entre Ríos</option>
+										<option value="FORMOSA">Formosa</option>
+										<option value="LA PAMPA">La Pampa</option>
+										<option value="LA RIOJA">La Rioja</option>
+										<option value="MENDOZA">Mendoza</option>
+										<option value="MISIONES">Misiones</option>
+										<option value="NEUQUÉN">Neuquén</option>
+										<option value="RÍO NEGRO">Río Negro</option>
+										<option value="SALTA">Salta</option>
+										<option value="SAN JUAN">San Juan</option>
+										<option value="SAN LUIS">San Luis</option>
+										<option value="SANTA CRUZ">Santa Cruz</option>
+										<option value="SANTA FE">Santa Fe</option>
+										<option value="SANTIAGO DEL ESTERO">Santiago del Estero</option>
+										<option value="TIERRA DEL FUEGO">Tierra del Fuego</option>
+										<option value="TUCUMÁN">Tucumán</option>
+										<option value="CIUDAD AUTÓNOMA DE BUENOS AIRES">Ciudad
+											Autónoma de Buenos Aires</option>
+									</select>
+								</div>
+							</div>
+							<div class="itemsInput">
+								<div class="itemInput">
+									<label for="numeroTelefono">Número de telefono</label> 
+									<input type="text" id="numeroTelefono" name="numeroTelefono" required min="1000000000" maxlength="12">
+								</div>
+								<div class="itemInput">
+									<label for="correoElectrico"> Correo Electronico</label> 
+									<input type="email" id="correoElectronico" name="correoElectronico" placeholder="email@example.com" required>
+								</div>
+							</div>	
+							<div class="itemsInput">
+							    <div class="itemInput">
+							    	<label for="pasword">Contraseña</label>
+					 	    		<input type="password" id="password" name="password">
+							    </div>
+					 	        <div class="itemInput">
+					 	        	<label for="paswordConfirm">Confirmar Contraseña</label>
+					 	    		<input type="password" id="paswordConfirm" name="paswordConfirm">
+					 	        </div>
+				 	       </div>
+						</div>
+						  <div>
+							 	<fieldset>
+								 	<legend>Genéro</legend>
+								 		<div class="itemsInput genero">
+								 		    <div>
+								 		    	<label for="generoFemenino">Femenino</label>
+									 			<input type="radio" id="GeneroFemenino" name="Genero" value="FEMENINO">
+								 		    </div>
+									 		<div>
+									 			<label for="generoMasculino">Masculino</label>
+									 			<input type="radio" id="GeneroMasculino" name="Genero" value="MASCULINO">
+									 		</div>
+									 		
+								 		</div>
+							 	</fieldset>
+							</div>	
+						</section>
+						<section id="adicional">
+						 		<fieldset>
+						 		 <legend>Categorias</legend>
+						 		        <div class="itemsInput categorias">
+						 		            <div>
+						 		             	<label for="frontend-backend">Frontend y Backend</label>
+												<input type="checkbox" id="frontend-backend" name="categoriasInteres" value="frontend-backend">
+						 		            </div>
+						 		            <div>
+												<label for="baseDeDatos">Base de Datos</label>
+												<input type="checkbox" id="baseDeDatos" name="categoriasInteres" value="baseDeDatos">
+						 		            </div>
+						 		        </div>
+										<div class="itemsInput categorias">
+						                    <div>
+												<label for="dataScience">Data Science</label>
+												<input type="checkbox" id="dataScience" name="categoriasInteres" value="dataScience">
+											 </div>
+											 <div>
+												<label for="bigData">Big Data</label>
+												<input type="checkbox" id="bigData" name="categoriasInteres" value="bigData">
+										      </div>
+										</div>
+						 		</fieldset>
+					
+								<div class="">
+									 <label for="sugerencias">Déjanos tus sugerencias:</label>
+						 	         <div><textarea id="sugerencias" name="sugerencias" rows="7" cols="65" placeholder="Escribe aqui"></textarea> </div>
+								</div>
+						</section>
+						
+				 	   <section id="terminos" class="itemsInput">
+					 	     <div>
+					 	    	<input type="checkbox" id="terminosCondiciones" name="terminosCondiciones" value="ACEPTO TERMINOS Y CONDIFICIONES" required>
+					 	    	<label for="terminosCondiciones">Acepto los <a href="#terminosCondiciones">términos y condiciones</a></label>
+					 	    </div>
+					 	    
+					 	    <div>
+					 	     	<input type="checkbox" id="recibirInformacion" name="recibirInformacion" value="ACEPTO RECIBIR INFORMACION">
+					 	     	<label for="recibirInformacion">Acepto recibir información de codersWeb</label>
+					 	    </div>
+				 	   </section>
+				 	   <section id="buttons">
+				 	       <button type="submit" class="enviar">Enviar</button>
+				 	       <button type="reset" class="borrar">Borrar</button>
+				 	   </section>
+				 	</form>
+			 	</div>
+		</div>
+
+	<footer id="contactos" class="relative">
+	     <div>
+	     
+	       
+	        <div class="links">
+	            <div class="containerLogoFooter">
+		          	<img alt="logo" src="../static/images/logo.png">
+		        </div>
+	        	<div> 
+		           <h4>Links Utiles</h4>
+		           <p><a href="#terminosCondiciones">Términos y Condiciones</a></p>
+		           <p><a href="#politicaPrivacidad">Política de Privacidad</a></p>
+	      		  </div>
+	        </div>
+	        <div class="containerRedes">
+	            <div class="red"> 
+		           	<a href="https://github.com/mili-08"><strong>By Milagro Jaquelina Martinez ❤️</strong> </a>
+		        </div>
+	        	<div class="red">
+		           <span><a href="https://www.instagram.com/" ><i class="fa-brands fa-instagram"></i></a></span>
+		           <span><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></span>
+		           <span><a href="https://www.tiktok.com/es" ><i class="fa-brands fa-tiktok"></i></a></span>
+	        	</div>
+	        </div>
+	     </div>
+	     <form action="">
+	       <label></label>
+	     </form>
+   </footer>
+</body>
 </html>
