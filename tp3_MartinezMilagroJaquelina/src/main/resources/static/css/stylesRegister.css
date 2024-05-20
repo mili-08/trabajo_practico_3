@@ -1,0 +1,115 @@
+@charset "ISO-8859-1";
+
+.containerFormImg {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 8em;
+	margin-bottom: -7em;
+}
+
+.containerFormImg img  {
+	margin-top: 3em;
+	width: 15em;
+	height: 20em;
+}
+
+.containerForm {
+	background-color: rgb(158, 118, 248);
+    color: black;
+    padding: 3em 4em;
+    /*text-align: center;*/
+}
+
+.containerForm h1  {
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+.containerInput {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1em;
+}
+
+.itemsInput {
+	display: flex;
+	column-gap: 8em;
+}
+
+#datosPersonales {
+	display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+}
+
+.itemInput {
+	display: flex;
+    gap: 0.3em;
+    flex-direction: column;
+}
+
+input, select {
+	width: 18em;
+    height: 2em;
+    border-radius: 1.7px;
+    background-color: #e7d998;
+	
+}
+
+.genero {
+	 column-gap: 0;
+    justify-content: space-around;
+}
+
+fieldset {
+	width: 30em;
+    margin-left: 3em;
+    border: 1px solid blanchedalmond;
+}
+
+.categorias input, .genero input, #terminos input{
+	width: 1em;
+    height: 1em;
+	
+}
+
+.categorias {
+	column-gap: 0;
+    justify-content: space-around;
+}
+
+legend {
+	text-align: center;
+}
+#adicional {
+	margin-top: 1em;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    row-gap: 2em;
+}
+
+#terminos {
+	 margin-top: 2em;
+    flex-direction: column;
+    margin-left: 10em;
+}
+
+#buttons button{
+	font-size: 1.1em;
+    padding: 0.5em 3em;
+}
+
+#buttons {
+	display: flex;
+    justify-content: space-evenly;
+    margin-top: 3em;
+    color: white;
+}
+
+#buttons .enviar {
+	background-color: rgb(255, 187, 50);
+}
+#buttons .borrar {
+	background-color: rgb(103, 53, 251);
+}
